@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 24px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  box-shadow: -1px -7px 7px -5px rgba(22, 29, 34, 0.18) inset;
+}
+.header__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.header__img {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__item1 {
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+.header__item2 {
+  display: flex;
+}
+
+.li {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+.li:hover {
+  background-color: #32c76f;
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.call {
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+}
+
+.header__btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.header__btn1 {
+  border-radius: 100px;
+  padding: 18px;
+  width: 58px;
+  height: 58px;
+  border: 0;
+  background-image: url(./img/header\(1\).svg);
+  background-repeat: no-repeat;
+  
+}
+
+.header__btn2 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 100px;
+  padding: 18px 30px;
+  width: 142px;
+  background-color: #299764;
+  border: 0;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+header__btn2:hover {
+  background-color: #32c76f;
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+.header__btn > a {
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+}
+.section1__img {
+  margin-top: 20px;
+  margin-right: 120px;
+  margin-left: 120px;
+}
+.section__input {
+  border-radius: 100px;
+  width: 600px;
+  background-color: #fff;
+}
+
+.search-bar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  padding: 0 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.search-bar input {
+  width: 600px;
+  height: 66px;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  padding: 0 20px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+  background: #fff;
+}
+
+.search-bar button {
+  padding: 24px 20px;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  background-color: #3bd97f;
+  cursor: pointer;
+}
+
+.cars {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.filter-buttons button {
+  margin: 10px;
+  background: #1e2025;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.filter-buttons button:hover {
+  background: #32c76f;
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 1200px;
+}
+.cars_word {
+font-weight: 600;
+font-size: 36px;
+text-align: center;
+color: #000;
+}
+.cars_text {
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+color: #555;
+}
+
+.car-card {
+  background: var(--card-bg);
+   color: var(--text-color);
+  padding: 20px;
+  border-radius: 10px;
+}
+.car-card :hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.car-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.view-all {
+  margin-top: 40px;
+  background: #3bd97f;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.view-all:hover {
+  background: #32c76f;
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+:root {
+  --gap: 16px;
+  --card-bg: #f8f9fb;
+  --card-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  --radius: 14px;
+  --text-color: #111;
+  --bg-color: #fff;
+}
+
+body.dark {
+  --card-bg: #222;
+  --text-color: #f4f4f4;
+  --bg-color: #111;
+  --card-shadow: 0 6px 18px rgba(255, 255, 255, 0.05);
+}
+#themeToggle {
+  border: none;
+  background: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 8px;
+  font-size: 18px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#themeToggle:hover {
+  transform: scale(1.05);
+}
